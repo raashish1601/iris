@@ -2148,7 +2148,7 @@ class _CFSaver:
             gm_write_param("false_northing", cs.false_northing)
             # Only one of these should be set
             if cs.true_scale_lat is not None:
-                gm_write_param("true_scale_lat", cs.true_scale_lat)
+                gm_write_param("standard_parallel", cs.true_scale_lat)
             elif cs.scale_factor_at_projection_origin is not None:
                 gm_write_param(
                     "scale_factor_at_projection_origin",
